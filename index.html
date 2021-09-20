@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js" integrity="sha512-jbTBHn1aXqglu6As1bUWxdPYc9b1uMHtreBM30oW3HbNFDS/eO1n+f98l4qcmw2l7CAdjWSbu3wVjm9SKISOaw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+  </head>
+
+  <body>
+    <div style='position: relative;' width='560' height='315'>
+    <iframe style='position: absolute;' width="560" height="315" src="https://www.youtube.com/embed/rDEcVPCoYIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <lottie-player style='position: absolute; display:block; width: 300px; height: 300px; float: left;' id='lottieDiv'></lottie-player>
+    </div>
+
+
+
+    <script>
+
+        let someLottie = 'https://assets8.lottiefiles.com/private_files/lf30_T5tVEx.json';
+
+        lottie.loadAnimation({
+            container: document.getElementById('lottieDiv'), // the dom element that will contain the animation
+            loop: true,
+            autoplay: true,
+            path: someLottie, // the path to the animation json
+        });
+    </script>
+
+    </body>
+</html>
+
